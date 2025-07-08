@@ -13,6 +13,10 @@ if (typeof data === 'string') {
   console.log(data * 2);
 } else if (typeof data === "boolean") {
   data ? console.log("Si") : console.log("No")
+} else if (typeof data === null) {
+  console.log("Il dato è vuoto")
+} else if (Array.isArray(data)) {
+  console.log(data.length);
 } else {
-  console.log("Tipo non supportato")
+  console.log("Tipo non supportato");
 }
